@@ -1,0 +1,113 @@
+
+ <header class="root">
+    <nav>
+      <a href="/" ><img src="https://nav.files.bbci.co.uk/orbit/b3428ed36e7e195dbf298117ef155a8f/img/blq-orbit-blocks_grey.svg" alt="logo" class="logo"/></a>
+      <a href="">Home</a>
+      <a href="">News</a>
+      <a class="navbar" href="">Travel</a>
+      <a class="navbar" href="">Culture</a>
+    </nav>
+    <div class="clr"></div>
+  </header>
+<section *ngFor="let item of data">
+  <div class="news">
+    <span>news |&nbsp;</span>
+    <span>
+          <button (click)="onClick()">
+            {{ state ? onText : offText }}
+          </button>
+    </span>
+  </div>
+  <div class="image-section">
+    <img src="{{item.hero_1_image}}" alt="image-pollution">
+    <div class="title">
+    <h1>{{item.hero_1_title}}</h1>
+    </div>
+  </div>
+
+  <div class="main-section-paragraph">
+          <div class="p_1_byline">
+            <p>
+             <span>{{item.article_info_1_byline}}</span>
+              <span>{{item.article_info_1_date}}</span>
+             <span><a href="{{item.article_info_1_category_url}}" target="_blank">{{item.article_info_1_category}}</a></span> </p>
+          </div>
+          <p class="p_1_value">{{item.p_1_value}}</p>
+</div>
+
+      <div class="p_value" >
+        <p>{{item.p_2_value}}</p>
+      </div>
+      <div class="p_value" >
+        <p>{{item.p_3_value}}</p>
+      </div>
+      <div class="p_value" >
+        <p>{{item.p_4_value}}</p>
+      </div>
+      <div class="p_value" >
+        <p>{{item.p_5_value}}</p>
+      </div>
+      <div class="select_city">
+        <p >{{item.compare_tabs_1_title}}</p>
+        <div class="total_cities">
+          Total cities: &nbsp; {{item.total_cities_1_value}}
+        </div>
+      </div>
+      <div class="btns_section">
+       <a class="btn" (click)="onClickCity(item.compare_tabs_1_city_1_name,item.compare_tabs_1_city_1_aqi,item.compare_tabs_1_city_1_cigg)">{{item.compare_tabs_1_city_1_name}}</a>
+       <a class="btn" (click)="onClickCity(item.compare_tabs_1_city_2_name,item.compare_tabs_1_city_2_aqi,item.compare_tabs_1_city_2_cigg)">{{item.compare_tabs_1_city_2_name}}</a>
+       <a class="btn" (click)="onClickCity(item.compare_tabs_1_city_3_name,item.compare_tabs_1_city_3_aqi,item.compare_tabs_1_city_3_cigg)">{{item.compare_tabs_1_city_3_name}}</a>
+       <a class="btn" (click)="onClickCity(item.compare_tabs_1_city_4_name,item.compare_tabs_1_city_4_aqi,item.compare_tabs_1_city_4_cigg)">{{item.compare_tabs_1_city_4_name}}</a>
+       <a class="btn" (click)="onClickCity(item.compare_tabs_1_city_5_name,item.compare_tabs_1_city_5_aqi,item.compare_tabs_1_city_5_cigg)">{{item.compare_tabs_1_city_5_name}}</a>
+       <a class="btn" (click)="onClickCity(item.compare_tabs_1_city_6_name,item.compare_tabs_1_city_6_aqi,item.compare_tabs_1_city_6_cigg)">{{item.compare_tabs_1_city_6_name}}</a>
+       <a class="btn" (click)="onClickCity(item.compare_tabs_1_city_7_name,item.compare_tabs_1_city_7_aqi,item.compare_tabs_1_city_7_cigg)">{{item.compare_tabs_1_city_7_name}}</a>
+       <a class="btn" (click)="onClickCity(item.compare_tabs_1_city_8_name,item.compare_tabs_1_city_8_aqi,item.compare_tabs_1_city_8_cigg)">{{item.compare_tabs_1_city_8_name}}</a>
+       <a class="btn" (click)="onClickCity(item.compare_tabs_1_city_9_name,item.compare_tabs_1_city_9_aqi,item.compare_tabs_1_city_9_cigg)">{{item.compare_tabs_1_city_9_name}}</a>
+       <a class="btn" (click)="onClickCity(item.compare_tabs_1_city_10_name,item.compare_tabs_1_city_10_aqi,item.compare_tabs_1_city_10_cigg)">{{item.compare_tabs_1_city_10_name}}</a>
+       <a class="btn" (click)="onClickCity(item.compare_tabs_1_city_11_name,item.compare_tabs_1_city_11_aqi,item.compare_tabs_1_city_11_cigg)">{{item.compare_tabs_1_city_11_name}}</a>
+       <a class="btn" (click)="onClickCity(item.compare_tabs_1_city_12_name,item.compare_tabs_1_city_12_aqi,item.compare_tabs_1_city_12_cigg)">{{item.compare_tabs_1_city_12_name}}</a>
+       <a class="btn" (click)="onClickCity(item.compare_tabs_1_city_13_name,item.compare_tabs_1_city_13_aqi,item.compare_tabs_1_city_13_cigg)">{{item.compare_tabs_1_city_13_name}}</a>
+       <a class="btn" (click)="onClickCity(item.compare_tabs_1_city_14_name,item.compare_tabs_1_city_14_aqi,item.compare_tabs_1_city_14_cigg)">{{item.compare_tabs_1_city_14_name}}</a>
+       <a class="btn" (click)="onClickCity(item.compare_tabs_1_city_15_name,item.compare_tabs_1_city_15_aqi,item.compare_tabs_1_city_15_cigg)">{{item.compare_tabs_1_city_15_name}}</a>
+       <a class="btn" (click)="onClickCity(item.compare_tabs_1_city_16_name,item.compare_tabs_1_city_16_aqi,item.compare_tabs_1_city_16_cigg)">{{item.compare_tabs_1_city_16_name}}</a>
+       <a class="btn" (click)="onClickCity(item.compare_tabs_1_city_17_name,item.compare_tabs_1_city_17_aqi,item.compare_tabs_1_city_17_cigg)">{{item.compare_tabs_1_city_17_name}}</a>
+       <a class="btn" (click)="onClickCity(item.compare_tabs_1_city_18_name,item.compare_tabs_1_city_18_aqi,item.compare_tabs_1_city_18_cigg)">{{item.compare_tabs_1_city_18_name}}</a>
+       <a class="btn" (click)="onClickCity(item.compare_tabs_1_city_19_name,item.compare_tabs_1_city_19_aqi,item.compare_tabs_1_city_19_cigg)">{{item.compare_tabs_1_city_19_name}}</a>
+       <a class="btn" (click)="onClickCity(item.compare_tabs_1_city_20_name,item.compare_tabs_1_city_20_aqi,item.compare_tabs_1_city_20_cigg)">{{item.compare_tabs_1_city_20_name}}</a>
+       <a class="btn" (click)="onClickCity(item.compare_tabs_1_city_21_name,item.compare_tabs_1_city_21_aqi,item.compare_tabs_1_city_21_cigg)">{{item.compare_tabs_1_city_21_name}}</a>
+       <a class="btn" (click)="onClickCity(item.compare_tabs_1_city_22_name,item.compare_tabs_1_city_22_aqi,item.compare_tabs_1_city_22_cigg)">{{item.compare_tabs_1_city_22_name}}</a>
+       <a class="btn" (click)="onClickCity(item.compare_tabs_1_city_23_name,item.compare_tabs_1_city_23_aqi,item.compare_tabs_1_city_23_cigg)">{{item.compare_tabs_1_city_23_name}}</a>
+       <a class="btn" (click)="onClickCity(item.compare_tabs_1_city_24_name,item.compare_tabs_1_city_24_aqi,item.compare_tabs_1_city_24_cigg)">{{item.compare_tabs_1_city_24_name}}</a>
+       <a class="btn" (click)="onClickCity(item.compare_tabs_1_city_25_name,item.compare_tabs_1_city_25_aqi,item.compare_tabs_1_city_25_cigg)">{{item.compare_tabs_1_city_25_name}}</a>
+       <a class="btn" (click)="onClickCity(item.compare_tabs_1_city_26_name,item.compare_tabs_1_city_26_aqi,item.compare_tabs_1_city_26_cigg)">{{item.compare_tabs_1_city_26_name}}</a>
+       <a class="btn" (click)="onClickCity(item.compare_tabs_1_city_27_name,item.compare_tabs_1_city_27_aqi,item.compare_tabs_1_city_27_cigg)">{{item.compare_tabs_1_city_27_name}}</a>
+       <a class="btn" (click)="onClickCity(item.compare_tabs_1_city_28_name,item.compare_tabs_1_city_28_aqi,item.compare_tabs_1_city_28_cigg)">{{item.compare_tabs_1_city_28_name}}</a>
+       <a class="btn" (click)="onClickCity(item.compare_tabs_1_city_29_name,item.compare_tabs_1_city_29_aqi,item.compare_tabs_1_city_29_cigg)">{{item.compare_tabs_1_city_29_name}}</a>
+       <a class="btn" (click)="onClickCity(item.compare_tabs_1_city_30_name,item.compare_tabs_1_city_30_aqi,item.compare_tabs_1_city_30_cigg)">{{item.compare_tabs_1_city_30_name}}</a>
+       <a class="btn" (click)="onClickCity(item.compare_tabs_1_city_31_name,item.compare_tabs_1_city_31_aqi,item.compare_tabs_1_city_31_cigg)">{{item.compare_tabs_1_city_31_name}}</a>
+       <a class="btn" (click)="onClickCity(item.compare_tabs_1_city_32_name,item.compare_tabs_1_city_32_aqi,item.compare_tabs_1_city_32_cigg)">{{item.compare_tabs_1_city_32_name}}</a>
+      </div>
+      <div class="method_calculation">
+        <p>{{item.p_6_value}}&nbsp;{{item.compare_tabs_1_method}}
+          <p *ngIf="city" class="city">{{city}}</p>
+          <p *ngIf="cigarette" class="cigarette">cigarette:&nbsp;{{cigarette}}&nbsp;&nbsp;({{aqi}}) </p>
+          <p class="cigaratte_images" *ngFor="let item of cigarette_img; let i=index">
+            <img *ngIf="cigarette" src="{{item}}" class="cigarette_img" alt="cigarette_image">
+          </p>
+      </div>
+
+      <div class="p_value" >
+        <p>{{item.p_7_value}}</p>
+      </div>
+      <div class="p_value" >
+        <p>{{item.p_8_value}}</p>
+      </div>
+      <div class="p_value" >
+        <p>{{item.p_9_value}}</p>
+      </div>
+      <div class="p_value" >
+        <p>{{item.p_10_value}}</p>
+      </div>
+
+  <div style="padding: 20px;"></div>
+</section>

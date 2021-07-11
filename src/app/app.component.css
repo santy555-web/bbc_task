@@ -1,0 +1,376 @@
+@media screen and (max-width: 700px){
+.root {
+  background-color: #f0f0f0;
+  height: 50px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  position: fixed;
+}
+.root .logo {
+  display: inline-block;
+  max-width: 300px;
+  padding: 1em 0;
+  vertical-align: middle;
+}
+.root .logo {
+    padding: 0.5em;
+  }
+.root nav {
+  text-align: center;
+}
+  .root nav {
+    text-align: center;
+    padding-top: 0.5rem;
+  }
+.root nav a {
+  text-decoration: none;
+  padding-left: 50px;
+  color: #000;
+  text-decoration: none;
+}
+.root .navbar{
+  display: none;
+}
+.root nav a:hover {
+  color: blueviolet;
+  text-decoration: none;
+}
+.news {
+  position: relative;
+  margin-top: 50px;
+  width: 100%;
+  background-color: #bb1919;
+  height: 31px;
+}
+.news span {
+  text-decoration: none;
+  position: relative;
+  border: 0;
+  color: white;
+  font-size: 1.5rem;
+}
+.image-section{
+  box-sizing: inherit;
+}
+.image-section img {
+    position: relative;
+    width: 100%;
+    object-fit: cover;
+    max-height: 480px;
+}
+}
+
+
+@media screen and (min-width: 700px){
+  .root {
+    background-color: #f0f0f0;
+    height: 50px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    position: fixed;
+  }
+  .root .logo {
+    display: inline-block;
+    max-width: 300px;
+    padding: 1em 0;
+    vertical-align: middle;
+  }
+  .root .logo {
+      padding: 0.5em;
+    }
+  .root nav {
+    text-align: center;
+  }
+    .root nav {
+      text-align: center;
+      padding-top: 0.5rem;
+    }
+  .root nav a {
+    text-decoration: none;
+    display: -webkit-inline-box;
+    padding-left: 50px;
+    color: #000;
+    text-decoration: none;
+  }
+  .root nav a:hover {
+    color: blueviolet;
+    text-decoration: none;
+  }
+  .news {
+    position: relative;
+    margin-top: 50px;
+    width: 100%;
+    background-color: #bb1919;
+    height: 31px;
+  }
+  .news span {
+    text-decoration: none;
+    position: relative;
+    border: 0;
+    color: white;
+    font-size: 1.5rem;
+  }
+
+  .image-section{
+    box-sizing: inherit;
+  }
+  .image-section img {
+      position: relative;
+      width: 100%;
+      object-fit: cover;
+      max-height: 480px;
+  }
+}
+
+@media screen and (max-width: 700px){
+  .image-section h1{
+    margin-left: 5%;
+    margin-right: 5%;
+    font-size: 1.5em;
+    font-weight: bold;
+    background-color: white;
+   }
+ }
+ @media screen and (min-width: 700px){
+  .image-section h1{
+  position: relative;
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-top: -7rem;
+  padding-left: 3rem;
+  font-size:40px;
+  padding-top: 1rem;
+  font-weight: bold;
+  padding-right: 3rem;
+  background-color: white;
+}
+}
+@media screen and (min-width: 700px){
+  .main-section-paragraph .p_1_byline{
+    position: absolute;
+    margin-left: 72px;
+    margin-top: -15px;
+    line-height: 22px;
+  }
+  .main-section-paragraph .p_1_byline p span{
+    display: block;
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 700px){
+   .main-section-paragraph .p_1_byline{
+    position: relative;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  .main-section-paragraph .p_1_byline p span{
+    font-size: 14px;
+    margin-right: 2rem;
+  }
+}
+
+@media screen and (min-width: 700px){
+  .main-section-paragraph .p_1_value{
+    padding-left: 20%;
+    padding-right: 20%;
+    margin-top: -16px;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 22px;
+ }
+}
+@media screen and (max-width: 700px){
+  .main-section-paragraph .p_1_value{
+    padding-left: 5%;
+    padding-right: 5%;
+    font-weight: bold;
+    line-height: 22px;
+    font-size: 1em;
+ }
+}
+@media screen and (max-width: 700px){
+  .total_cities {
+    padding-left: 5%;
+    padding-right: 5%;
+    font-size: 14px;
+    line-height: 22px;
+ }
+ .p_value{
+  padding-left: 5%;
+  padding-right: 5%;
+  font-size: 14px;
+  line-height: 22px;
+  text-align: start;
+ }
+ .method_calculation{
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-bottom: 5%;
+  font-size: 1em;
+  line-height: 29px;
+  font-weight: bold;
+  margin: 2% 5% 2% 5%;
+  color: rgb(62 20 20);
+  text-align: center;
+  border-bottom: 2px solid #9e9e9e;
+}
+.city{
+  text-decoration: #9e9e9e;
+  text-decoration-line: underline;
+  margin: 2% 5% 2% 5%;
+  color: rgb(62 20 20);
+  text-align: center;
+}
+.cigarette{
+  margin: 2% 5% 2% 5%;
+  color: rgb(62 20 20);
+  text-align: center;
+}
+.cigarette_img{
+display: block;
+width: 32px;
+height: auto;
+margin: 0px;
+padding: 0px;
+white-space: nowrap;
+}
+.cigaratte_images{
+display: inline-block;
+margin: 0px;
+padding: 0px;
+vertical-align: middle;
+text-align:justify !important;
+}
+.select_city{
+  border-bottom: 2px solid #9e9e9e;
+  padding: 1%;
+  padding-left: 20%;
+  padding-right: 20%;
+  font-size: 1em;
+  font-weight: bold;
+  margin: 2% 5% 2% 5%;
+  text-transform: uppercase;
+  color: #000;
+  text-align: center;
+}
+.btns_section{
+text-align: -webkit-center;
+margin: 2% 5% 2% 5%;
+padding-bottom: 1%;
+}
+.btn{
+background-color: #d6d6d6;
+border-radius: 40px;
+border: none;
+font-size: small;
+color: #000;
+display: inline-block;
+padding: 8px;
+margin: 1%;
+text-align: center;
+outline: none;
+}
+.btn:hover{
+background-color: #4b4343;;
+border-radius: 40px;
+border: none;
+color: #fff;
+padding: 8px;
+text-align: center;
+outline: none;
+}
+}
+@media screen and (min-width: 700px){
+  .total_cities {
+    padding-left: 20%;
+    padding-right: 20%;
+    font-size: 14px;
+ }
+ .p_value{
+  padding-left: 20%;
+  padding-right: 20%;
+  font-size: 14px;
+  line-height: 22px;
+  text-align: start;
+ }
+ .method_calculation{
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 5%;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 2% 5% 2% 5%;
+    color: rgb(62 20 20);
+    text-align: center;
+    border-bottom: 2px solid #9e9e9e;
+}
+.city{
+    text-decoration: #9e9e9e;
+    text-decoration-line: underline;
+    margin: 2% 5% 2% 5%;
+    color: rgb(62 20 20);
+    text-align: center;
+}
+.cigarette{
+    margin: 2% 5% 2% 5%;
+    color: rgb(62 20 20);
+    text-align: center;
+}
+.cigarette_img{
+  display: block;
+  width: 32px;
+  height: auto;
+  margin: 0px;
+  padding: 0px;
+  white-space: nowrap;
+}
+.cigaratte_images{
+  display: inline-block;
+  margin: 0px;
+  padding: 0px;
+  vertical-align: middle;
+  text-align:justify !important;
+}
+ .select_city{
+    border-bottom: 2px solid #9e9e9e;
+    padding: 1%;
+    padding-left: 20%;
+    padding-right: 20%;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 2% 5% 2% 5%;
+    text-transform: uppercase;
+    color: #000;
+    text-align: center;
+ }
+ .btns_section{
+  text-align: -webkit-center;
+  margin: 2% 5% 2% 5%;
+  padding-bottom: 1%;
+ }
+ .btn{
+  background-color: #d6d6d6;
+  border-radius: 40px;
+  border: none;
+  color: #000;
+  display: inline-block;
+  padding: 9px;
+  margin: 1%;
+  text-align: center;
+  outline: none;
+ }
+ .btn:hover{
+  background-color: #4b4343;;
+  border-radius: 40px;
+  border: none;
+  color: #fff;
+  padding: 9px;
+  text-align: center;
+  outline: none;
+ }
+}
+
+
+
